@@ -1,0 +1,30 @@
+{
+    "name": "ibrahima/gl",
+    "description": "some tips",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "^3.7",
+        "symfony/var-dumper": "^7.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ibou\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "idiallo",
+            "email": "iboudiallo84@gmail.com"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "composer dump-autoload --optimize"
+        ]
+    }
+}
