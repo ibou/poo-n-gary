@@ -15,3 +15,7 @@ $validation = new Validator();
 $validation->_validate($useregistration);
 
 dump($validation->getErrors());
+
+$productRepository = new \App\ProductRepository();
+$products = $productRepository->fetchProducts();
+dump($products);
