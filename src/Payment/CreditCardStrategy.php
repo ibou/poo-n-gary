@@ -22,7 +22,7 @@ class CreditCardStrategy implements PaymentStrategyInterface
     {
         if ($this->validate()) {
             // Logique de paiement par carte bancaire
-            echo "Paiement de {$amount}€ par carte bancaire\n";
+            echo "Paiement de {$amount}€ par carte bancaire" . PHP_EOL;
             return true;
         }
         return false;

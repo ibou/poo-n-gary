@@ -20,7 +20,7 @@ class PayPalStrategy implements PaymentStrategyInterface
     public function pay(float $amount): bool
     {
         if ($this->validate()) {
-            echo "Paiement de {$amount}€ via PayPal\n";
+            echo "Paiement de {$amount}€ par paypal" . PHP_EOL;
             return true;
         }
         return false;

@@ -5,6 +5,7 @@ declare(strict_types=1);
 
 use App\Payment\BankTransferStrategy;
 use App\Payment\CreditCardStrategy;
+use App\Payment\PaymentService;
 use App\Payment\PaymentStrategyResolver;
 use App\Payment\PayPalStrategy;
 
@@ -19,9 +20,11 @@ $transfert = new BankTransferStrategy('FR1420041010050500013M02606', 'AGRIFRPP88
 $resolver->addStrategy($transfert);
 
 try {
-    $resolver->resolveStrategy('credit_card')->pay(100);
-    $resolver->resolveStrategy('paypal')->pay(200);
-    $resolver->resolveStrategy('virement')->pay(300);
+
+    $service = new PaymentService($resolver);
+    $service->processPayment('cb', 800.00);
+    $service->processPayment('paypal', 200.00);
+    $service->processPayment('virement', 300.00);
 } catch (InvalidArgumentException $e) {
     echo $e->getMessage();
 }

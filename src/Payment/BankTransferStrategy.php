@@ -20,7 +20,7 @@ class BankTransferStrategy implements PaymentStrategyInterface
     {
         if ($this->validate()) {
 
-            echo "Paiement de {$amount}€ via virement \n";
+            echo "Paiement de {$amount}€ via virement" . PHP_EOL;
             return true;
         }
         return false;

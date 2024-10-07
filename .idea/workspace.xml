@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efcd21bb-4dd6-42b5-9d66-d581daa48752" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment/BankTransferStrategy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment/CreditCardStrategy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment/PayPalStrategy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment/PaymentService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment/PaymentStrategyInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment/PaymentStrategyResolver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/poo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/poo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/PaymentTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payment/BankTransferStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment/BankTransferStrategy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payment/CreditCardStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment/CreditCardStrategy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payment/PayPalStrategy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment/PayPalStrategy.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +115,7 @@
       <workItem from="1726599269877" duration="2084000" />
       <workItem from="1726743526568" duration="597000" />
       <workItem from="1726868259449" duration="768000" />
-      <workItem from="1728239811122" duration="14726000" />
+      <workItem from="1728239811122" duration="17144000" />
     </task>
     <servers />
   </component>
