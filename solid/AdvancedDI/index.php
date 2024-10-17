@@ -24,8 +24,11 @@ try {
 
     $container->set(id: 'loggerFile', callable: new FileLogger( logFile: __DIR__ . '/app.log' ));
 
+
+    $container->set(id: 'logger', callable: $container->get(id: 'loggerDB'));
+
     $emailService = new EmailService(
-        logger: $container->get(id: 'loggerFile')
+        logger: $container->get(id: 'logger')
     );
 
     $container->set(id: 'emailService', callable: $emailService);
@@ -34,7 +37,7 @@ try {
     $container->set(id: 'userService',
         callable: new UserService(
             emailService: $container->get(id: 'emailService'),
-            logger: $container->get(id: 'loggerFile')
+            logger: $container->get(id: 'logger')
         )
     );
     $userService = $container->get(id: 'userService');
