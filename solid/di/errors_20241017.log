@@ -1,0 +1,14 @@
+[2024-10-17 13:33:35]: Erreur [512]: Ceci est une erreur de test dans le fichier /Users/ibrahima/ww-dev/projects/garyclark/poo/solid/di/index.php à la ligne 29
+[2024-10-17 13:33:35]: Exception: Division by zero
+[2024-10-17 13:33:35]: Exception: Ceci est une exception de test
+[2024-10-17 13:33:35]: Exception: Call to undefined function fonctionInexistante()
+[2024-10-17 13:33:35]: Erreur [16384]: Erreur de dépréciation dans le fichier /Users/ibrahima/ww-dev/projects/garyclark/poo/solid/di/index.php à la ligne 71
+[2024-10-17 13:33:35]: Erreur [1024]: Erreur de notice dans le fichier /Users/ibrahima/ww-dev/projects/garyclark/poo/solid/di/index.php à la ligne 72
+[2024-10-17 13:33:35]: Erreur [512]: Erreur d'avertissement dans le fichier /Users/ibrahima/ww-dev/projects/garyclark/poo/solid/di/index.php à la ligne 73
+[2024-10-17 13:33:43]: Erreur [512]: Ceci est une erreur de test dans le fichier /Users/ibrahima/ww-dev/projects/garyclark/poo/solid/di/index.php à la ligne 29
+[2024-10-17 13:33:43]: Exception: Division by zero
+[2024-10-17 13:33:43]: Exception: Ceci est une exception de test
+[2024-10-17 13:33:43]: Exception: Call to undefined function fonctionInexistante()
+[2024-10-17 13:33:43]: Erreur [16384]: Erreur de dépréciation dans le fichier /Users/ibrahima/ww-dev/projects/garyclark/poo/solid/di/index.php à la ligne 71
+[2024-10-17 13:33:43]: Erreur [1024]: Erreur de notice dans le fichier /Users/ibrahima/ww-dev/projects/garyclark/poo/solid/di/index.php à la ligne 72
+[2024-10-17 13:33:43]: Erreur [512]: Erreur d'avertissement dans le fichier /Users/ibrahima/ww-dev/projects/garyclark/poo/solid/di/index.php à la ligne 73
