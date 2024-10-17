@@ -6,10 +6,12 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 try {
 
+    /*
     $configuration = new App\Configuration(
         loggerType: 'file',
         logFilePath: __DIR__ . '/app.log',
     );
+    */
 
     $configuration = new App\Configuration(
         loggerType: 'db',
