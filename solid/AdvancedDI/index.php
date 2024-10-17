@@ -4,48 +4,28 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use App\Service\DatabaseLogger;
-use App\Service\EmailService;
-use App\Service\FileLogger;
-use App\Service\LoggerInterface;
-use App\Service\UserService;
-
 try {
-    $container = new App\Container\Container();
 
-    $container->set(id: 'pdo', callable: new PDO('sqlite::memory:'));
-
-    $container->set(
-        id: 'loggerDB',
-        callable: new DatabaseLogger(
-            connection: $container->get(id: 'pdo')
-        )
+    $configuration = new App\Configuration(
+        loggerType: 'file',
+        logFilePath: __DIR__ . '/app.log',
     );
 
-    $container->set(id: 'loggerFile', callable: new FileLogger( logFile: __DIR__ . '/app.log' ));
-
-
-    $container->set(id: 'logger', callable: $container->get(id: 'loggerDB'));
-
-    $emailService = new EmailService(
-        logger: $container->get(id: 'logger')
+    $configuration = new App\Configuration(
+        loggerType: 'db',
+        dbDsn: 'sqlite::memory:',
     );
+    $application = new App\Application($configuration);
+    $userService = $application->getUserService();
+    $userService->register(email: 'daranto@daranto.ue');
 
-    $container->set(id: 'emailService', callable: $emailService);
-
-
-    $container->set(id: 'userService',
-        callable: new UserService(
-            emailService: $container->get(id: 'emailService'),
-            logger: $container->get(id: 'logger')
-        )
-    );
-    $userService = $container->get(id: 'userService');
-    $userService->register(email: 'silabeth@gamail.com');
-
-} catch (Exception $e) {
+} catch (\Exception $e) {
     dump($e->getMessage());
 }
+
+
+
+
 
 
 
